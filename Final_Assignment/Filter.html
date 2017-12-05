@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <div class="row text-center">
+    <title>California Vacation Services</title>
+  </div>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>  
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<!-- Top Navigation bar -->
+<div class="topnav" id="myTopnav">
+  <a class="active" href="#home">Home</a>
+  <a href="/Final_Assignment/Filter.html">Top 5's</a>
+  <a href="/Final_Assignment/form.html">Contact</a>
+  <a href="/Final_Assignment/about.html">About</a>
+</div>
+
+
+<body style="background-color: #778899">
+  
+  <center><h1><u>Our Top 5 Activities in California Categorically</u></h1></center>
+  <center><p>Enter possible destination counties to see which of these 
+  activities/destinations are located in your candidate destination counties.</p></center>
+  <center><p>Note: Refresh the webpage between searches</p></center>
+  
+  <header class="container">
+    <div class="row" >
+      
+
+ <p>County: </p>
+ <input type="text" name="county" id="countyTextField">
+
+<button type="button" onclick="filter()">Filter</button>
+<p id="countyResultArea"></p>
+
+
+    </div>
+    
+    
+    
+    
+     <script>
+        function filter() {
+            
+           var x = document.getElementById('countyTextField').value; 
+           var y= document.getElementById('countyResultArea');
+           
+           y.innerHTML = "showing results for search: "+ x + " County"; 
+           
+           
+           var all = document.getElementsByTagName("li");
+           var max=all.length;
+          
+            
+           for(var i=0;i<all.length;i++) {  // gets all correct elements
+            
+                if(all[i].className.search(x) != -1) {
+                // if found, do nothing
+                
+            }
+            else {
+                // if not found, set hidden
+                 all[i].style.visibility = "hidden";
+            }
+            
+           }
+     }
+        
+    </script>
+  </header>
+      	
+     
+    
+     <div  id="center">
+        <div id="left">
+          <p><b>Active</b></p>
+  <ul>
+   <li id="activity_1" name="li" class="San Diego"><a href="https://torreypine.org/reserveinfo/trails/" target="_blank" style="color: #FFD700">Hike Torrey Pines</a></li>
+   <li id="activity_2" name="li" class="Tuolumne|Mariposa|Madera"><a href="http://johnmuirtrail.org/" target="_blank" style="color: #FFD700">Hike the Full John Muir Trail</a></li>
+   <li id="activity_3" name="li" class="San Bernadino"><a href="https://socalhiker.net/hiking-mt-san-antonio-baldy-loop-trail/" target="_blank" style="color: #FFD700">Hike to the Summit of Mt. Baldy</a></li>
+   <li id="activity_4" name="li" class="	Siskiyou"><a href="https://hikemtshasta.com/mount-shasta-trails/panther-meadow-trail/" target="_blank" style="color: #FFD700">Hike and Camp in the Meadows on Mt. Shasta</a></li>
+   <li id="activity_5" name="li" class="Mariposa"><a href="https://www.nps.gov/yose/planyourvisit/halfdome.htm" target="_blank" style="color: #FFD700">Hike Half Dome</a></li>
+  </ul>
+        </div>
+          <img src="/Final_Assignment/images/active.png" style="height: 200px; width: 400px; margin-bottom: 50px;"/>
+    </div>
+
+
+
+
+ <div  id="center">
+        <div id="left">
+           <p><b>Relaxing</b></p>
+<ul>
+   <li id="activity_6" name="li" class="Riverside"><a href="https://renaissance-hotels.marriott.com/renaissance-indian-wells-resort-and-spa-palm-springs" target="_blank" style="color: #FFD700">Renaissance Indian Wells Resort</a></li>
+   <li id="activity_7" name="li" class="Orange"><a href="https://www.surfandsandresort.com/" target="_blank" style="color: #FFD700">Surf & Sand Resort</a></li>
+   <li id="activity_8" name="li" class="Riverside"><a href="http://www.marriott.com/hotels/travel/ctdca-jw-marriott-desert-springs-resort-and-spa/" target="_blank" style="color: #FFD700">JW Marriott Desert Springs Resort</a></li>
+   <li id="activity_9" name="li" class="Orange"><a href="https://www.montagehotels.com/lagunabeach/" target="_blank" style="color: #FFD700">Montage Laguna Beach</a></li>
+   <li id="activity_10" name="li" class="Riverside"><a href="http://rivierapalmsprings.com/" target="_blank" style="color: #FFD700">Riviera Palm Springs Resort</a></li>
+  </ul>
+        </div>
+          <img src="/Final_Assignment/images/relaxing.jpg" style="height: 200px; width: 400px; margin-bottom: 50px;"/>
+    </div>
+
+
+
+ <div  id="center">
+        <div id="left">
+          <p><b>Scenic</b></p>
+      <ul>
+   <li id="activity_11" name="li" class="Tuolumne|Mariposa|Madera"><a href="https://www.yosemite.com/" target="_blank" style="color: #FFD700">Yosemite National Park</a></li>
+   <li id="activity_12" name="li" class="San Bernadino"><a href="https://www.nps.gov/jotr/index.htm" target="_blank" style="color: #FFD700">Joshua Tree National Park</a></li>
+   <li id="activity_13" name="li" class="San Francisco"><a href="https://www.sfcablecar.com/" target="_blank" style="color: #FFD700">San Francisco Cable Car</a></li>
+   <li id="activity_14" name="li" class="Monterey"><a href="http://www.parks.ca.gov/?page_id=578" target="_blank" style="color: #FFD700">Pfeiffer Beach</a></li>
+   <li id="activity_15" name="li" class="Siskiyou"><a href="https://www.nps.gov/labe/index.htm" target="_blank" style="color: #FFD700">Lava Tube Caves</a></li>
+  </ul>
+        </div>
+          <img src="/Final_Assignment/images/scenery.jpg" style="height: 200px; width: 400px; margin-bottom: 50px;"/>
+    </div>
+
+
+
+<div  id="center">
+        <div id="left">
+          <p><b>Thrill Seeking</b></p>
+      <ul>
+   <li id="activity_16" name="li" class="Los Angeles"><a href="https://www.sixflags.com/magicmountain" target="_blank" style="color: #FFD700">Six Flags Magic Mountain</a></li>
+   <li id="activity_17" name="li" class="Los Angeles"><a href="http://www.malibuparagliding.com/" target="_blank" style="color: #FFD700">Paragliding</a></li>
+   <li id="activity_18" name="li" class="San Joaquin"><a href="https://skydivecal.com/" target="_blank" style="color: #FFD700">Sky Diving</a></li>
+   <li id="activity_19" name="li" class="Los Angeles"><a href="https://www.visitcatalinaisland.com/activities-adventures/two-harbors/scuba-diving" target="_blank" style="color: #FFD700">Scuba Diving</a></li>
+   <li id="activity_20" name="li" class="Riverside"><a href="https://www.skullcanyon.com/" target="_blank" style="color: #FFD700">Zip Lining</a></li>
+  </ul>
+        </div>
+          <img src="/Final_Assignment/images/thrill_seeking.jpg" style="height: 200px; width: 400px; margin-bottom: 50px;"/>
+    </div>
+
+
+
+
+<div  id="center">
+        <div id="left">
+          <p><b>Dining/Restaraunts</b></p>
+  <ul>
+   <li id="activity_21" name="li" class="Santa Cruz|Riverside"><a href="https://mission-bbq.com/" target="_blank" style="color: #FFD700">Mission BBQ</a></li>
+   <li id="activity_22" name="li" class="Riverside|Los Angeles|Orange|Shasts||San Bernadino|Santa Clara|San Joaquin|San Francisco|Sacramento"><a href="http://www.in-n-out.com/#close" target="_blank" style="color: #FFD700">In-N-Out Burger</a></li>
+   <li id="activity_23" name="li" class="Sacramento"><a href="http://www.waterboyrestaurant.com/" target="_blank" style="color: #FFD700">The Waterboy</a></li>
+   <li id="activity_24" name="li" class="Los Angeles"><a href="http://www.pinkshollywood.com/" target="_blank" style="color: #FFD700">Pink's</a></li>
+   <li id="activity_25" name="li" class="Los Angeles"><a href="http://mussoandfrank.com/" target="_blank" style="color: #FFD700">Musso and Frank Grill</a></li>
+  </ul>
+        </div>
+          <img src="/Final_Assignment/images/dining.png" style="height: 200px; width: 400px; margin-bottom: 50px;"/>
+    </div>
+
+
+
+
+
+<div  id="center">
+        <div id="left">
+           <p><b>Lodgng/Hotels</b></p>
+  <ul>
+   <li id="activity_26" class="Los Angeles"><a href="http://magiccastlehotel.com/" target="_blank" style="color: #FFD700">Magic Castle</a></li>
+   <li id="activity_27" class="Los Angeles"><a href="https://www.carlyle-inn.com/" target="_blank" style="color: #FFD700">Carlyle Inn</a></li>
+   <li id="activity_28" class="Napa"><a href="http://hiltongardeninn3.hilton.com/en/index.html" target="_blank" style="color: #FFD700">Hilton Garden Inn</a></li>
+   <li id="activity_29" class="San Francisco"><a href="http://www.hotelzephyrsf.com/" target="_blank" style="color: #FFD700">Hotel Zephyr</a></li>
+   <li id="activity_30" class="Orange"><a href="https://www.thehotelmajestic.com/" target="_blank" style="color: #FFD700">Hotel Majestic</a></li> 
+  </ul>
+        </div>
+          <img src="/Final_Assignment/images/lodging.jpg" style="height: 200px; width: 400px; margin-bottom: 50px;"/>
+    </div>
+
+
+  
+
+</body>
+</html>

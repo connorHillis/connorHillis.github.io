@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>  
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+   <!-- Top Navigation bar -->
+<div class="topnav" id="myTopnav">
+  <a class="active" href="/Final_Assignment/Index.html">Home</a>
+  <a href="/Final_Assignment/Filter.html">Top 5's</a>
+  <a href="/Final_Assignment/form.html">Contact</a>
+  <a href="/Final_Assignment/about.html">About</a>
+</div>
+    
+    
+   <!-- <body class="centered-wrapper">
+        <div class="centered-content">...</div> -->
+    <h2>Submit this form to have all of your California Vacation questions answered</h2>
+    <div class="container">
+       
+     <div class="formDiv">
+        <!--<label for="First Name">First Name:</label> -->
+        
+         <p>First Name:<br></p>
+        <input type="text" id="First Name">
+     </div>
+      
+      
+    <div class="formDiv">
+      <!--  <label for="Last Name">Last Name:</label> -->
+         <p>Last Name:<br></p>
+        <input type="text" id="Last Name">
+    </div>
+   
+    <div class="formDiv">
+       <!-- <label for="mail">Email:</label> -->
+         <p>Email:<br></p>
+        <input type="text" id="mail">
+    </div>
+    
+    
+    <div class="formDiv">
+        <!--<label for="phone">Phone Number:</label> -->
+         <p>Phone Number:<br></p>
+        <input type="text" id="phone">
+    </div>
+    
+    
+    <div class="formDiv">
+        <p>How may we respond to you?</p>
+        <label for="contactByPhone">Phone</label>
+        <input type="checkbox" id="contactByPhone"> <!-- CHECKBOXES HERE **** -->  
+         <label for="contactByEmail">Email</label>
+        <input type="checkbox" id="contactByEmail">
+    </div>
+    
+    
+    <div class="formDiv">
+       <!-- <label for="msg">Enter characteristics of the vacation that you desire
+        or any questions you have for our travel agents to </label> -->
+        
+        <p>Specifications:<br></p>
+       <!-- <section class="container"> --> <!-- container for all 8 firures -->
+      <div class="row">
+          <figure class="col-sm-3">
+         <p><u>ex:</u> You may enter a price range, activity type, and/or
+          destination city or county to have our travel agents devise a vacation
+          plan for you.</p></figure>
+          <figure class="col-sm-3">
+        <textarea id="msg" name="user_message" style="width: 400px; height: 200px;"></textarea>
+        </figure>
+      </div> <!-- row -->
+    </div>
+
+    <form>
+         <input type="button" value="Submit" onclick="Warn();" />
+      </form>
+      
+       <script type="text/javascript">
+            function Warn() {
+               alert ("Your form has been submitted successfully!");
+            }
+      </script>
+      
+      
+    <!--  </div>
+      </div> -->
+</body>
+</html>
